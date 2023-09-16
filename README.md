@@ -1,4 +1,4 @@
-#How to run the program ? 
+# How to run the program ? 
 
 In the main directory of the project run in the terminal:
 
