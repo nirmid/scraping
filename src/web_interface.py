@@ -1,43 +1,53 @@
 from abc import ABC, abstractmethod
+from typing import Any
 
 
-class webScrap(ABC):
+class WebScrap(ABC):
     def __init__(self, name: str, search_url: str) -> None:
+        """Web interface that hold name and the search-bar URL
+
+        Args:
+            name (str): name of the website
+            search_url (str): url of the serach-bar in the website
+        """
         self.name = name
         self.search_url = search_url
 
     @abstractmethod
-    def search_item(self, item: str) -> str:
-        """Returns URL as str of the item that is being searched 
+    def search_item(self, item):
+        """Returns page result of the item that is being searched 
 
         Args:
-            item (str): item to be searched in the website
+            item : item to be searched in the website
 
         Returns:
-            str: URL of the result 
+            str: page of the result 
         """
         pass
 
-    def scrap_pages(self, pages_url: str) -> None:
+    @abstractmethod
+    def scrap_pages(self, pages) -> None:
         """Scrap the result pages
 
         Args:
-            pagesURL (str): first page of URL of the result search
+            pages : first page of of the result search
         """
         pass
 
-    def scrap_page(self, page_url: str) -> None:
+    @abstractmethod
+    def scrap_page(self, page) -> None:
         """Scrap over single page
 
         Args:
-            pageURL (str): single result page URL
+            page: object thats holds all the items of a single page
         """
         pass
 
-    def scrap_item(self, item_url: str) -> None:
+    @abstractmethod
+    def scrap_item(self, item) -> None:
         """Extracts data from the item page and generates a JSON file
 
         Args:
-            itemURL (str): item URL
+            item : item's url
         """
         pass
