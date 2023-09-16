@@ -67,6 +67,9 @@ class Ebay(WebScrap):
         title = item.find(
             "h1", attrs={"class": "x-item-title__mainTitle"}).find("span").text
 
+        self.create_json(product_id, img_path, price, title)
+
+    def create_json(self, product_id: str, img_path: list[str], price: str, title: str) -> None:
         file_data = {
             "Title": title,
             "Image Path": img_path,

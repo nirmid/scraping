@@ -51,3 +51,14 @@ class WebScrap(ABC):
             item : item's url
         """
         pass
+
+    @abstractmethod
+    def create_json(self, product_id: str, img_path: list[str], price: str, title: str) -> None:
+        """Generates a json file according to params
+
+        Args:
+            product_id (str)
+            img_path (list[str])
+            price (str)
+            title (str)
+        """
