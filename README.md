@@ -22,7 +22,7 @@ Legal approach: Use Ebay API.
 
 How would you improve the process in order to retrieve more items?
 
-using AWS EC2 instances and hadoop or spark framework in order to devide the workload between serval computers.  
+using AWS EC2 instances and hadoop or spark framework in order to devide the workload between several computers.  
 
 
 In what ways could you improve the process through the application of AI?
