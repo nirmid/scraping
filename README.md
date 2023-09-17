@@ -5,10 +5,11 @@ In the main directory of the project run in the terminal:
 ```bash
 python main.py
 ```
+The program will run and create an "out" directory, in which all the results files will be put
 
-## Notes
+## How add another marketplace ?
 
-In order to test the program I limited the number of pages to 2.
+One should implement a Class of WebScrap specific for the marketplace
 
 ## Questions after project
 
