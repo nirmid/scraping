@@ -7,7 +7,7 @@ python main.py
 ```
 The program will run and create an "out" directory, in which all the results files will be put
 
-## How add another marketplace ?
+## How to add another marketplace ?
 
 One should implement a Class of WebScrap specific for the marketplace
 
